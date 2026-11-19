@@ -9,6 +9,7 @@ Run installation, training, valuation, and evaluation commands from the reposito
 | [Dataset splits](splits.md) | NAVSIM scene filters and dataset splits |
 | [Caching](cache.md) | Metric cache preparation |
 | [Metrics](metrics.md) | EPDMS evaluation and component metrics |
+| [Publishing](publishing.md) | Project page deployment and README visual identity |
 
 ## Repository layout
 

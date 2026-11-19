@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">PAD — Learn what matters. Drive better.</title>
+  <desc id="desc">PAD's flowing line emblem and blue-to-rose wordmark, framed by softly converging trajectories on a near-white background.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#F2F6FC"/><stop offset=".5" stop-color="#FCFBFD"/><stop offset="1" stop-color="#FBF1F5"/></linearGradient>
+    <linearGradient id="ink" x1="422" y1="195" x2="826" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#6886C5"/><stop offset=".5" stop-color="#466AAD"/><stop offset="1" stop-color="#DE899F"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#6886C5" stop-opacity=".24"/><stop offset=".48" stop-color="#6886C5" stop-opacity=".06"/><stop offset="1" stop-color="#DE899F" stop-opacity=".28"/></linearGradient>
+    <clipPath id="frame"><rect width="1280" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="360" rx="24" fill="url(#paper)"/>
+    <g stroke="url(#line)" stroke-width="1.5">
+      <path d="M-80 70C170 70 190 312 540 312S1000 75 1360 75"/>
+      <path d="M-80 86C165 86 200 321 555 321S1010 92 1360 92"/>
+      <path d="M-80 102C160 102 210 330 570 330S1020 109 1360 109"/>
+      <path d="M-80 118C155 118 220 339 585 339S1030 126 1360 126"/>
+      <path d="M-80 134C150 134 230 348 600 348S1040 143 1360 143"/>
+      <path d="M-80 150C145 150 240 357 615 357S1050 160 1360 160"/>
+    </g>
+    <g stroke-linecap="round" stroke-width="3">
+      <path d="M104 142C126 160 146 180 167 201" stroke="#93ADD8"/>
+      <path d="M1094 151C1122 134 1153 119 1183 110" stroke="#E4AEC0"/>
+    </g>
+    <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+      <text x="640" y="55" fill="#647B9E" font-size="14" font-weight="600" letter-spacing="3.2">POLICY-AWARE DATA VALUATION</text>
+      <text x="677" y="203" fill="url(#ink)" font-size="132" font-weight="700" letter-spacing="-6">PAD</text>
+      <text x="640" y="259" fill="#486286" font-size="26" font-weight="400">Learn what matters. Drive better.</text>
+    </g>
+    <g transform="translate(421 104) scale(1.43)">
+      <g stroke="#6886C5" stroke-width="3.5" stroke-linecap="round">
+        <path d="M10 61C32 61 20 16 49 16H66"/>
+        <path d="M10 47C30 47 30 30 49 30H61"/>
+        <path d="M10 33C30 33 27 61 49 61H66"/>
+      </g>
+      <path d="M38 46C47 46 48 44 55 40" stroke="#DE899F" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="64" cy="35" r="4" fill="#DE899F"/>
+    </g>
+  </g>
+</svg>
