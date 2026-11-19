@@ -1,0 +1,104 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+
+# OMC runtime state
+.omc/
+
+backup/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+navsim_workspace/
+outputs/
+
+# macOS resource forks
+._*
+__MACOSX/
+.agents
+
+# Runtime outputs
+# python
+*.pyc
+**/__pycache__/
+.pytest_cache/*
+.pydevproject
+
+.idea
+.idea/*
+
+lightning_logs/
+
+lightning_logs/*
+
+debug/
+debug/*
+
+# IDE
+# .vscode/*
+
+# Pip
+*.egg-info
+
+# files
+*.log
+*.pkl
+!tools/gaussian_mixed_noise/navtrain_8_mean_std.pkl
+*.jpg
+*.pcd
+
+# exp
+exp
+
+# data
+dataset
+
+# lsf
+*.bsub
+
+# running scripts
+scripts_dev/*
+
+.DS_Store
+
+# Published project illustrations
+!assets/**/*.jpg
+.agents

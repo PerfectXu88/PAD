@@ -1,0 +1,33 @@
+_target_: navsim.agents.meanfuser.meanfuser_agent.MeanfuserAgent
+_convert_: 'all'
+
+trajectory_sampling:
+  _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+  _convert_: 'all'
+  time_horizon: 4
+  interval_length: 0.5
+
+config:
+  _target_: navsim.agents.meanfuser.meanfuser_config.MeanfuserConfig
+  _convert_: 'all'
+
+  seq_len: 1
+  lidar_seq_len: 4
+  latent: True
+
+  num_proposals: 8
+  noise_type: multi_gaussian
+  navtrain_mean_std_path: ${oc.env:NAVSIM_DEVKIT_ROOT}/tools/gaussian_mixed_noise/navtrain_8_mean_std.pkl
+
+  resnet34_ckpt_path: ${oc.env:OPENSCENE_DATA_ROOT}/models/resnet34_model.bin
+  output_dir: null
+
+  trajectory_sampling:
+    _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+    _convert_: 'all'
+    time_horizon: 4
+    interval_length: 0.5
+
+checkpoint_path: null
+lr: 1e-4
+max_epochs: 100
