@@ -9,8 +9,8 @@
 <p align="center"><strong>Select the demonstrations that improve your driving policy.</strong></p>
 
 <p align="center">
-<a href="https://perfectxu88.github.io/">Chengkai Xu</a><sup>1</sup>, Yicheng Guo<sup>1</sup>, Jiaqi Liu<sup>2</sup>, Yiming Cui<sup>1</sup>,<br>
-Shiyu Fang<sup>1</sup>, Peng Hang<sup>1</sup>, Hao Zhang<sup>3</sup>, Jian Sun<sup>1</sup>
+<a href="https://perfectxu88.github.io/">Chengkai Xu</a><sup>1</sup>, Yicheng Guo<sup>1</sup>,<br>
+Jiaqi Liu<sup>2</sup>, Yiming Cui<sup>1</sup>, Shiyu Fang<sup>1</sup>, Peng Hang<sup>1</sup>, Hao Zhang<sup>3</sup>, Jian Sun<sup>1</sup>
 </p>
 <p align="center">
 <sup>1</sup> College of Transportation, Tongji University<br>
