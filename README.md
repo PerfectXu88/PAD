@@ -8,20 +8,28 @@
 
 <p align="center">
 Chengkai Xu<sup>1</sup>, Yicheng Guo<sup>1</sup>, Jiaqi Liu<sup>2</sup>, Yiming Cui<sup>1</sup>,<br>
-Shiyu Fang<sup>1</sup>, Peng Hang<sup>1</sup>, Hao Zhang<sup>1</sup>, Jian Sun<sup>1</sup>
+Shiyu Fang<sup>1</sup>, Peng Hang<sup>1</sup>, Hao Zhang<sup>3</sup>, Jian Sun<sup>1</sup>
 </p>
 <p align="center">
 <sup>1</sup> College of Transportation, Tongji University<br>
-<sup>2</sup> Department of Computer Science, UNC Chapel Hill
+<sup>2</sup> Department of Computer Science, UNC Chapel Hill<br>
+<sup>3</sup> Department of Control Science and Engineering, Tongji University
 </p>
 
 <p align="center">
-<a href="#the-right-data-for-your-policy">🎯 Why PAD</a> &nbsp; / &nbsp;
 <a href="#how-pad-works">💡 Method</a> &nbsp; / &nbsp;
+<a href="#the-right-data-for-your-policy">🎯 Why PAD</a> &nbsp; / &nbsp;
+<a href="#highlights">✨ Highlights</a> &nbsp; / &nbsp;
 <a href="#stronger-driving-with-less-synthetic-data">📈 Results</a> &nbsp; / &nbsp;
 <a href="#getting-started">🚀 Getting started</a> &nbsp; / &nbsp;
 <a href="docs/reproduction.md">📖 Reproduction guide</a>
 </p>
+
+<a id="how-pad-works"></a>
+
+## 💡 How PAD works
+
+<img src="assets/pad-framework.png" width="100%" alt="PAD framework: driving outcomes guide demonstration valuation and policy-specific selection">
 
 <a id="the-right-data-for-your-policy"></a>
 
@@ -39,6 +47,15 @@ PAD makes data selection **policy-aware**. It connects a target policy's driving
 </tr>
 </table>
 
+<a id="highlights"></a>
+
+## ✨ Highlights
+
+- **Policy-specific value.** Real driving outcomes identify the demonstrations that matter to each planner.
+- **Scalable influence.** Projected gradients and regularized local geometry score the candidate pool with one linear solve.
+- **Three policy families.** Select a compact dataset, then train DiffusionDrive, LTF, or MeanFuser with its native objective.
+- **Rankings backed by retraining.** Group-removal effects align with PAD values (**Spearman rho = -0.900**).
+
 <a id="stronger-driving-with-less-synthetic-data"></a>
 
 ## 📈 Stronger driving with less synthetic data
@@ -51,29 +68,7 @@ PAD makes data selection **policy-aware**. It connects a target policy's driving
 | LTF | 79.1 | 84.4 | **85.9** | 75% |
 | MeanFuser | 84.2 | 84.8 | **87.1** | 75% |
 
-*NavTest EPDMS (0-100), reported in the paper. Retention refers to the 208,413-scene synthetic candidate pool; every variant retains the real training set.*
-
 **The gains extend to challenging driving scenarios.** On NavHard, the best PAD configurations achieve **32.9 / 30.8 / 30.7** EPDMS for DiffusionDrive / LTF / MeanFuser, gains of **5.0 / 7.8 / 6.1 points** over their real-only baselines.
-
-<a id="how-pad-works"></a>
-
-## 💡 How PAD works
-
-<img src="assets/pad-framework.png" width="100%" alt="PAD framework: driving outcomes guide demonstration valuation and policy-specific selection">
-
-### Driving outcomes guide data value
-
-PAD evaluates the real-only base policy on held-out real scenes. These outcomes define a policy-specific learning direction: the same demonstration can receive a different value for a different planner.
-
-### Projected influence makes valuation scalable
-
-PAD combines supervised trajectory gradients with a compact, regularized representation of the policy's local geometry. A shared Gaussian projection reduces the computation to a single linear solve, followed by scoring the candidate pool.
-
-### Select once, train the full policy
-
-At a chosen data budget, PAD selects the highest-valued demonstrations and combines them with real training data. The complete policy then learns with its native objective. The framework supports deterministic, diffusion-based, and flow-based planners.
-
-**The ranking predicts what matters.** In the five-group removal experiment, group values align with the measured effect of removing their demonstrations (**Spearman rho = -0.900**): removing lower-valued groups improves driving utility, while removing the highest-valued group causes the largest reduction. This connects PAD's valuation mechanism to actual retraining behavior.
 
 ## 🚘 See the driving behavior
 
@@ -102,4 +97,6 @@ Choose your policy and follow the [reproduction guide](docs/reproduction.md) to 
 
 ## 🤝 Acknowledgements and license
 
-PAD builds on NAVSIM, DiffusionDrive, TransFuser, MeanFuser, and the synthetic-data tooling included in this repository. See the [documentation](docs/README.md) for installation, data preparation, and reproduction instructions.
+PAD builds on [NAVSIM](https://github.com/autonomousvision/navsim), [SimScale](https://github.com/OpenDriveLab/SimScale), [DiffusionDrive](https://github.com/hustvl/DiffusionDrive), [TransFuser](https://github.com/autonomousvision/transfuser), and [MeanFuser](https://github.com/wjl2244/MeanFuser). We thank their authors for making their code and resources publicly available.
+
+Please refer to the respective repositories for their licenses. See the [documentation](docs/README.md) for installation, data preparation, and reproduction instructions.
