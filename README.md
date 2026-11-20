@@ -19,7 +19,8 @@ Jiaqi Liu<sup>2</sup>, Yiming Cui<sup>1</sup>, Shiyu Fang<sup>1</sup>, Peng Hang
 </p>
 
 <p align="center">
-<strong><a href="https://perfectxu88.github.io/PAD/">🌐 Explore the Project Page</a></strong> &nbsp; &middot; &nbsp;
+<strong><a href="https://perfectxu88.github.io/PAD/">🌐 Project Page</a></strong> &nbsp; &middot; &nbsp;
+<a href="https://arxiv.org/pdf/2611.25604">📄 arXiv</a> &nbsp; &middot; &nbsp;
 <a href="docs/README.md">📖 Documentation</a> &nbsp; &middot; &nbsp;
 <a href="https://perfectxu88.github.io/">💬 Contact Me</a>
 </p>
