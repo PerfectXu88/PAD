@@ -18,6 +18,20 @@ Jiaqi Liu<sup>2</sup>, Yiming Cui<sup>1</sup>, Shiyu Fang<sup>1</sup>, Peng Hang
 <sup>3</sup> Department of Control Science and Engineering, Tongji University
 </p>
 
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.25604">
+    <img src="https://img.shields.io/badge/arXiv-2611.25604-B31B1B?style=flat-square" alt="arXiv">
+  </a>
+  <a href="https://perfectxu88.github.io/PAD/">
+    <img src="https://img.shields.io/badge/Project-Page-2563EB?style=flat-square" alt="Project Page">
+  </a>
+  <a href="docs/README.md">
+    <img src="https://img.shields.io/badge/Docs-Documentation-0F766E?style=flat-square" alt="Documentation">
+  </a>
+</p>
+
+
 <p align="center">
 <strong><a href="https://perfectxu88.github.io/PAD/">🌐 Project Page</a></strong> &nbsp; &middot; &nbsp;
 <a href="https://arxiv.org/pdf/2611.25604">📄 arXiv</a> &nbsp; &middot; &nbsp;
